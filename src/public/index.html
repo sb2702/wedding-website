@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+
+    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Dancing+Script|Great+Vibes|Open+Sans|Satisfy" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <title>Sam and Nadia</title>
+    <link href="img/ele2.png" rel="icon">
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body ng-controller="mainController">
+
+
+
+
+<div id="menu">
+
+
+    <div class="menu-option" ng-click="selected = 'home'"><img src="img/ele2.png" class="menu-option-image"  ng-show="selected=='home'" align="top">Home</div>
+    <div class="menu-option" ng-click="selected = 'location'"><img src="img/ele2.png" class="menu-option-image"  ng-show="selected=='location'"  align="top">Location</div>
+    <div class="menu-option" ng-click="selected = 'schedule'"><img src="img/ele2.png" class="menu-option-image"  ng-show="selected=='schedule'"  align="top">Schedule</div>
+    <div class="menu-option" ng-click="selected = 'stay'"><img src="img/ele2.png" class="menu-option-image"  ng-show="selected=='stay'"  align="top">Where to stay</div>
+    <div class="menu-option" ng-click="selected = 'sightsee'"><img src="img/ele2.png" class="menu-option-image"  ng-show="selected=='sightsee'"  align="top">Sightseeing</div>
+    <div class="menu-option" ng-click="selected = 'about'"><img src="img/ele2.png" class="menu-option-image"  ng-show="selected=='about'" align="top">About us</div>
+    <div class="menu-option" ng-click="selected = 'gifts'"><img src="img/ele2.png" class="menu-option-image"  ng-show="selected=='gifts'" align="top">Wedding gifts</div>
+
+    <div id="menu-border"></div>
+</div>
+
+
+<div class="panel" ng-show="selected == 'home'">
+
+
+    <div id="top-border"></div>
+
+    <div id="announcement">
+
+        <div id="us"><b><span style="font-family: 'Great Vibes';;" >S</span><span >am</span></b> and <b>Nadia</b></div>
+        <div id="verb">are getting married</div>
+        <div id="date">June 24th, 2018</div>
+        <div id="location">Princeton, New Jersey</div>
+
+    </div>
+
+
+
+    <img src="img/prince.png" id="prince"  style="" />
+
+    <img src="img/princess.png"  style="position: absolute; top: 0; right: 0; height: 55vh;" />
+
+</div>
+
+
+<div class="panel" ng-show="selected == 'location'">
+
+<h1>Getting here</h1>
+
+
+    <h3>Event Location</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.4040744561735!2d-74.61400638426123!3d40.35556386728041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e76d8d97f5e3%3A0x7051256c81a31796!2sThe+Westin+Princeton+at+Forrestal+Village!5e0!3m2!1sen!2sng!4v1506800481595" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+    <h3>Flying in</h3>
+
+    <p>Newark Airport (<span style="font-family:Open Sans">EWR</span>) is the closest to fly into. From the airport, <a href="http://www.njtransit.com/pdf/rail/r0070.pdf"> you can take a train</a> (~$20) to Princeton Junction, and from there there are free shuttles to the Westin. You can also take an Uber/Lyft (~$50),  or a taxi (~$70). Every option takes about 1 hour without traffic.
+    </p>
+
+
+
+    <h3>Driving</h3>
+    <p>You can get here with your favorite navigation/GPS. There is plenty of free parking at the event location</p>
+
+
+    <h3>From NYC or Philly</h3>
+    <p>You can take an NJ transit train from NY Penn Station directly to Princeton Junction on the <a href="http://www.njtransit.com/pdf/rail/r0070.pdf"> North East Corridor line</a>. From Philadelphia you can take a SEPTA train from 30th station to Trenton, and from there take a North East Corridor train to Princeton Junction.From Princeton Junction, there are free shuttles to the Westin.</p>
+
+</div>
+
+
+<div class="panel" ng-show="selected == 'sightsee'">
+
+
+    <h1>Looking to explore the area?</h1>
+    <p>Look, we know that for some, weddings can be an excuse to travel! Luckily, Princeton, NJ is pretty well situated</p>
+
+
+
+    <h2>New York City</h2>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/9a/e3/1d/freedom-tower.jpg" style="height: 20vh" title="Singing Frank Sinatra's New York New York is obligatory as you enter the city. Jay-Z's Empire State of mind is the only acceptable alternative.">
+    <p>Princeton is about 1 hour away from the Big apple! If you're not from around here, definitely <a href="https://wikitravel.org/en/New_York_City">consider spending some time </a> </p>
+
+    <h2>Philadelphia</h2>
+    <img src="https://lonelyplanetwp.imgix.net/2017/02/B.-Krist-VISIT-PHILADELPHIA_1-76f24f3e2dee.jpg?crop=entropy&fit=crop&h=421&sharp=10&vib=20&w=748"  style="height: 20vh" title="I'm obliged to not like Philly because my brother lived there, but it is the city of Brotherly love">
+    <p>Princeton is also 1 hour away from Philly. I know many of you have lived in/know New York City quite well, so why not give <a href="https://wikitravel.org/en/Philadelphia">Philly a try?</a> </p>
+    <h2>Altantic City</h2>
+
+    <img src="http://www.visitnj.org/sites/default/master/files/styles/profile-slideshow/public/zzdata-2728_600x400.jpg?itok=pumNIdI3"  style="height: 20vh" >
+
+    <p>Atlantic City is also about 1 hour away, and makes a fantastic day trip in NJ</p>
+    <h2>Princeton</h2>
+    <img src="http://www.casa-aziz.com/wp-content/uploads/2015/12/Palmer-Square-Princeton-New-Jersey.jpg" style="height: 20vh" >
+    <p>And of course, while in Princeton, why not see Princeton? Princeton is a beautiful college town, with a quaint center, good food, bars, and of course, Princeton University!</p>
+</div>
+
+
+
+<div class="panel" ng-show="selected == 'schedule'">
+
+    <h1>Schedule</h1>
+
+
+    <p>2p-3pm: Wedding Ceremony</p>
+    <p>3pm-5pm:Mingle </p>
+    <p>5pm-6pm: Cocktail Hour</p>
+    <p>6pm-7pm: Dinner</p>
+    <p>7pm-10pm: Reception</p>
+</div>
+
+
+<div class="panel" ng-show="selected == 'stay'">
+
+    <h1>Where to stay?</h1>
+
+
+    <h2>Convenient</h2>
+    <img src="http://www.remingtonhotels.com/resourcefiles/propertymainimage/the-westin-princeton-at-forrestal-village.jpg " style="max-height: 30vh;" />
+
+    <p>Our wedding is being hosted at the Westin Hotel, in Princeton Forrestal Village. The Hotel has offered a 10% discount ($130/night/room) to any wedding invitees who register using <a href="https://www.starwoodmeeting.com/Book/RamirezBhattacharyyaWedding">this link</a> </p>
+
+    <h2>Affordable</h2>
+
+    <img src="https://static.tripping.com/uploads/image/0/221/tripping-airbnb.jpg" style="max-height: 20vh"/>
+    <p>The Westin is located ~5 minutes from downtown Princeton, New Jersey. On AirBnB, you can find accomodation for between $50 and $100 / night</p>
+</div>
+
+
+<div class="panel" ng-show="selected=='about'">
+
+
+
+
+    <h1>About us</h1>
+
+    <img src="img/us.jpg " style="height: 35vh;" title="You know we know you know we're cute" />
+
+    <p>You know we're cute, but do you know how we got together?</p>
+
+    <h3>Sam</h3>
+    <p>After college (and a brief stint in a PhD program) Sam, a young american-born confused desi boy in search of the deeper meaning of life (and some good food) joined the US Peace Corps, which sent him to México.</p>
+    <img src="img/charro.jpg" title="My poor parents were already worried about how Americanized I was, and then I do this" style="height: 45vh">
+
+
+    <h3>Nadia</h3>
+
+    <p>A small town girl from Mexico, fresh from a Master's degree in linguistics, took a part-time job as a Spanish teacher, which brought her to the offices of the Peace Corps, to teach Spanish to new Peace Corps volunteers</p>
+
+    <img src="img/nadia.jpg" style="height: 30vh" title="Guapa :*">
+
+   <h3>Rule #1</h3>
+
+    <p>   "Don't date the Spanish teacher"</p>
+
+    <img src="img/us_3.jpg" style="height: 30vh" title="Seriously though Peace Corps, please don't be mad">
+
+    <p>Whoops</p>
+
+    <h3>5 years later..</h3>
+
+    <img src="img/proposal.jpg" style="height: 50vh" title="The first time I proposed, the ring slipped out of my hands and rolled into the Taj Mahal fountains. I almost got arrested that day trying to fish the ring out of the fountains, but I'm glad I didn't get arrested. Getting engaged is way better">
+
+
+
+
+
+
+
+</div>
+
+
+<div class="panel" ng-show="selected=='gifts'">
+
+    <h1>Don’t buy us boxed gifts! </h1>
+    <p> If you’re coming to our wedding, that means you are an important part of our lives (and we hope we are of yours!). Sometimes people wish to show their appreciation at weddings by buying the wedding couple a gift - <b>but please don’t buy us boxed gifts</b>!  We would much rather that you just come and celebrate our special day with us.
+    </p>
+
+    <h3>Why no boxed gifts?</h3>
+    <p>Nadia and Sam are <b>moving to Nigeria</b> shortly after our wedding. As of June 12th, 2018,  all of our worldly possessions will be packaged into 4 suitcases, and checked into the Mexico City airport, to be sent off to Africa.
+        </p>
+
+    <h3>Why are Sam and Nadia moving to Nigeria?</h3>
+    <p>
+    Sam is running <a href="http://www.dotlearn.org" style=" font-weight: bold;">dot Learn</a> , an education technology company/social enterprise that he co-founded to provide data-light online courses to students in Africa.
+    </p>
+
+
+
+</div>
+
+</body>
+</html>

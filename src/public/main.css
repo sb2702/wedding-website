@@ -1,0 +1,190 @@
+html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+
+    width: 100%;
+    height: 100%;
+    background-image: url("img/pattern.png");
+    background-repeat: repeat;
+    color: #80204e;
+    font-family: 'Great Vibes';
+
+}
+
+
+
+#top-border{
+    position: absolute;
+    width: 120%;
+    height: 50%;
+    left: -20vw;
+    background-image: url("img/picado.png");
+    background-repeat: repeat-x;
+
+}
+
+
+@media screen and (orientation:portrait) {
+
+
+    #location{
+
+        position: absolute; left: 10vw; top: 52vh; font-size: 6vh;   width: 60vw;
+    }
+
+    #date{
+        position: absolute; left: 10vw; top: 32vh; font-size: 12vw;
+        width: 60vw;
+    }
+
+    #save-the-date{
+
+        position: absolute; left: 10vw; top: 20vh; font-size: 10vw; font-weight: bold;
+    }
+
+    #prince{
+
+        position: absolute; bottom: 0; left: 0; max-width: 60vw;
+    }
+
+    #music{
+
+        display: none;
+    }
+}
+
+@media screen and (orientation:landscape) {
+
+    #music{
+        position: absolute;
+        left: 5vh;
+        bottom: 5vh;
+        height: 7vh;
+        cursor: pointer;
+    }
+
+
+    #verb{
+
+        font-size:8vh;
+    }
+    .panel{
+
+        position: absolute;
+        left: 20%;
+        padding-left: 5vw;
+        right: 0;
+        top: 0;
+        overflow-y: auto;
+        bottom: 0;
+    }
+
+    p{
+        font-size: 3vh;
+        font-family: 'Satisfy';
+        max-width: 800px;
+    }
+
+    #us{
+        font-size: 12vh;
+    }
+
+    h1{
+        font-size: 7vh;
+    }
+
+    h2{
+        font-size: 5vh;
+    }
+
+    h3{
+        font-size: 3vh;
+    }
+
+
+    #announcement{
+        position: absolute;
+        top: 22vh;
+        left: -2vw;
+        font-family: 'Pinyon Script';
+        text-align: center;
+        width: 50vw;
+    }
+
+    #menu{
+
+        position: absolute;
+        left: 0;
+        width: 20vw;
+        background-color: #80204e;
+        top: 0;
+        bottom: 0;
+    }
+
+
+    .menu-option-image{
+
+        position: absolute;
+        width: 2vw;
+        left: -2.5vw;
+    }
+
+    .menu-option{
+
+        color: #d8ce89;
+        position: relative;
+        left: 3vw;
+        width: 11vw;
+        top: 5vh;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        cursor: pointer;
+        font-family: 'Great Vibes';
+        font-size: 3.5vh;
+        font-weight: bold;
+    }
+    #menu-border{
+
+        position: absolute;
+
+        top: 0;
+        bottom: 0;
+        width: 6vw;
+        right: 0;
+        background-image: url('img/border.jpg');
+        background-repeat: repeat;
+    }
+
+    #location{
+        margin-top: 1vh;
+       left: 5vw;
+        font-size: 4vh;
+        text-align: center;
+    }
+
+
+    #date{
+
+        margin-top: 10vh;
+    left: 5vw;  font-size: 5vh;
+        text-align: center;
+    }
+
+    #save-the-date{
+
+
+      font-size: 6vh; font-weight: bold;
+        text-align: center;
+    }
+
+
+    #prince{
+        position: absolute; bottom: 0; left: 40vw; max-height: 55vh;
+    }
+
+}
+
